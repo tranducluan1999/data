@@ -34,40 +34,6 @@ public class FindLaptop {
         this.sql = sql;
     }
 
-    public List<Laptop> excuteSQL( String sql)
-    {
-        List<Laptop> laptopList = new ArrayList<>();
-
-        try {
-            Statement stm = connection.createStatement();
-            ResultSet rs = stm.executeQuery(sql);
-            while (rs.next())
-            {
-                String name = rs.getString(2);
-                String url =rs.getString(3);
-                String maker = rs.getString(4);
-                String type = rs.getString(5);
-                String ram = rs.getString(6);
-                String cpu = rs.getString(7);
-                String ssd = rs.getString(8);
-                String hdd = rs.getString(9);
-                float price = rs.getFloat(10);
-                String card = rs.getString(11);
-                String screenResolution = rs.getString(12);
-                String screenSize = rs.getString(13);
-                int sold = rs.getInt(14);
-                Laptop laptop = new Laptop(name, url, maker, type, ram, cpu, ssd, hdd, price, card, screenResolution, screenSize, sold);
-                laptopList.add(laptop);
-
-            }
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        return laptopList;
-
-    }
-
     public String request( Long price1, Long price2, String maker, String screenSize, String ram, String type, String  card, String sortUp, String sortDown)
     {
 
@@ -112,6 +78,43 @@ public class FindLaptop {
 
 
     }
+
+
+    public List<Laptop> excuteSQL( String sql)
+    {
+        List<Laptop> laptopList = new ArrayList<>();
+
+        try {
+            Statement stm = connection.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+            while (rs.next())
+            {
+                String name = rs.getString(2);
+                String url =rs.getString(3);
+                String maker = rs.getString(4);
+                String type = rs.getString(5);
+                String ram = rs.getString(6);
+                String cpu = rs.getString(7);
+                String ssd = rs.getString(8);
+                String hdd = rs.getString(9);
+                float price = rs.getFloat(10);
+                String card = rs.getString(11);
+                String screenResolution = rs.getString(12);
+                String screenSize = rs.getString(13);
+                int sold = rs.getInt(14);
+                Laptop laptop = new Laptop(name, url, maker, type, ram, cpu, ssd, hdd, price, card, screenResolution, screenSize, sold);
+                laptopList.add(laptop);
+
+            }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return laptopList;
+
+    }
+
+
 
 
 

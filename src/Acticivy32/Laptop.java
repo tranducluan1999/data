@@ -49,5 +49,155 @@ public class Laptop {
     public Laptop(String name, String url, String maker, String type, String ram, String cpu, String ssd, String hdd, float price, String card, String screenResolution, String screenSize, int sold) {
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getMaker() {
+        return maker;
+    }
+
+    public void setMaker(String maker) {
+        this.maker = maker;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getRam() {
+        return ram;
+    }
+
+    public void setRam(String ram) {
+        this.ram = ram;
+    }
+
+    public String getCpu() {
+        return cpu;
+    }
+
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
+    }
+
+    public String getSsd() {
+        return ssd;
+    }
+
+    public void setSsd(String ssd) {
+        this.ssd = ssd;
+    }
+
+    public String getHdd() {
+        return hdd;
+    }
+
+    public void setHdd(String hdd) {
+        this.hdd = hdd;
+    }
+
+    public Long getPrice() {
+        return price;
+    }
+
+    public void setPrice(Long price) {
+        this.price = price;
+    }
+
+    public String getCard() {
+        return card;
+    }
+
+    public void setCard(String card) {
+        this.card = card;
+    }
+
+    public String getScreenResolution() {
+        return screenResolution;
+    }
+
+    public void setScreenResolution(String screenResolution) {
+        this.screenResolution = screenResolution;
+    }
+
+    public String getScreenSize() {
+        return screenSize;
+    }
+
+    public void setScreenSize(String screenSize) {
+        this.screenSize = screenSize;
+    }
+
+    public int getSold() {
+        return sold;
+    }
+
+    public void setSold(int sold) {
+        this.sold = sold;
+    }
+
+    public Timestamp getCreated_timestamp() {
+        return created_timestamp;
+    }
+
+    public void setCreated_timestamp(Timestamp created_timestamp) {
+        this.created_timestamp = created_timestamp;
+    }
+
+    public Timestamp getLasted_updated_timestamp() {
+        return lasted_updated_timestamp;
+    }
+
+    public void setLasted_updated_timestamp(Timestamp lasted_updated_timestamp) {
+        this.lasted_updated_timestamp = lasted_updated_timestamp;
+    }
+
+    public Long getFromPrice() {
+        return fromPrice;
+    }
+
+    public void setFromPrice(Long fromPrice) {
+        this.fromPrice = fromPrice;
+    }
+
+    public Long getToPrice() {
+        return toPrice;
+    }
+
+    public void setToPrice(Long toPrice) {
+        this.toPrice = toPrice;
+    }
+
+    public String getSort() {
+        return sort;
+    }
+
+    public void setSort(String sort) {
+        this.sort = sort;
+    }
 }
